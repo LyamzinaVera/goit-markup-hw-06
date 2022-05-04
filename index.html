@@ -375,58 +375,63 @@
            </li>
           </ul>
         </div>
-        <div class="sabcription">
-          <p class="title white">Подпишись на рассылку</p>
-          <form class="sabscription-form">
-            <label class="sabscription-label">
-              <input class="sabscription-input" type="email" name="sabscription" placeholder="E-mail">
-            </label>
-            <button class="sabscription-button" type="submit">Подписаться
-              <svg class="sabscription-button-icon" width="24" height="24">
+        <form class="footer-form" name="subscription-form" action="#" autocomplete="off">
+          <label class="subscription-label" for="subscription">Подпишитесь на рассылку</label>
+          <div class="subscribe">
+            <input class="subscription-input" id="subscription" type="email" name="subscription" placeholder="E-mail">
+            <button class="button-primary subscription-button" type="submit">Подписаться
+              <svg class="subscription-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
      </div>
    </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-     <div>
-       <p class="modal-title"></p>
+      <button class="close-icon" data-modal-close>
+        <svg class="close">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+     <div class="modal-form">
+       <p class="modal-title">Оставьте свои данные, мы Вам перезвоним</p>
        <form class="form" name="order-form">
          <div class="form-field">
-           <label class="form-label">Имя
-             <input class="form-input" type="text" name="name">
-             <div>
-               <svg class="form-svg" width="18" height="18">
-                 <use href="./img/icons.svg#icon-person"></use>
-               </svg>
-             </div>
-           </label>
-           <label class="form-label">Телефон
-             <input class="form-input" type="tel" name="tel">
-              <div>
-                <svg class="form-svg" width="18" height="18">
-                  <use href="./img/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-           </label>
-           <label class="form-label">Почта
-             <input class="form-input" type="email" name="email">
-             <div>
-               <svg class="form-svg" width="18" height="18">
-                 <use href="./img/icons.svg#icon-email-black-18dp-1-1-1"></use>
-               </svg>
-             </div>
-           </label>
-           <label class="form-label">
-             <input class="form-input" type="email" name="email">
+            <input class="form-input" type="text" name="name" id="name">
+            <label class="form-label" for="name">Имя</label>
+             <svg class="form-svg" width="18" height="18">
+             <use href="./img/icons.svg#icon-person"></use>
+             </svg>
+         </div>
+         <div class="form-field">
+            <input class="form-input" type="tel" name="tel" id="tel">
+            <label class="form-label" for="tel">Телефон</label>
+              <svg class="form-svg" width="18" height="18">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+         </div>
+         <div class="form-field">
+            <input class="form-input" type="email" name="email" id="email">
+            <label class="form-label" for="email">Почта</label>
+              <svg class="form-svg" width="18" height="18">
+                <use href="./img/icons.svg#icon-email-black-18dp-1-1-1"></use>
+              </svg>
+         </div>
+         <div class="form-field">
+           <label class="form-label">Коментарий
+              <textarea class="content-comment" name="comment" placeholder="Введите текст"></textarea>
            </label>
          </div>
-         <label class="form-checkbox">
-           <input type="checkbox" name="">
-         </label>
+         <div>
+           <label class="form-checkbox">
+             <input class="checkbox" type="checkbox" name="checkbox">
+             <span class="deal">Соглашаюсь с рассылкой и принимаю</span>
+             <span class="deal-rules">Условия договора</span>
+           </label>
+           <button class="sabscription-button" type="submit">Отправить</button>
+         </div>
         </form>
      </div>
     </div>    
@@ -436,8 +441,3 @@
 </html>
 
 
-<button class="close-icon" data-modal-close>
-  <svg class="close">
-    <use href="./img/icons.svg#icon-close"></use>
-  </svg>
-</button>
