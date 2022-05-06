@@ -42,7 +42,11 @@ margin: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
-
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
 /* Main-nav */
 .page-header {
    border-bottom: 1px var(--line-color) solid;
@@ -77,11 +81,7 @@ margin: 0;
 .logo-white {
     color: var(--primery-white-color)
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-}
+
 
 /* auth-nav */
 .auth-nav {
@@ -293,7 +293,7 @@ position: relative;
 }
 
 .title {  
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -655,7 +655,7 @@ color: var(--accent-color);
 .footer-form {
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
+    margin-left: auto;
 }
 .subscription-label{
     margin-bottom: 20px;
@@ -745,13 +745,12 @@ color: var(--accent-color);
     
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    color: var(--title-text-color);
+    fill: var(--title-text-color);
     background-color:var(--primary-white-color);
 }
 .close-icon:hover,
 .close-icon:focus{
-background-color: var(--accent-color);
-color: var(--primary-white-color);
+    fill: var(--accent-color);
 }
 textarea{
     resize: none;
